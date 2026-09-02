@@ -9,26 +9,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class MyServlet extends HttpServlet {
-
-	
 	// service method
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
-			
+
 		resp.setContentType("text/html");
-		
-		PrintWriter out=resp.getWriter();
-		
+
+		PrintWriter out = resp.getWriter();
+
 		out.print("<body>");
-		
+
 		out.print("<h1>");
 		out.print("Hello  Kalpesh !!!");
 		out.print("</h1>");
-		
+
 		out.print("</body>");
-		
-	
+
 	}
 
 }
