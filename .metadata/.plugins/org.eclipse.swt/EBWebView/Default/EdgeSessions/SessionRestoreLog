@@ -18,3 +18,21 @@
 {"logTime": "0902/112159", "session": "END"}
 {"logTime": "0902/112215", "session": "START"}
 {"logTime": "0902/112224", "session": "END"}
+{"logTime": "0903/095746", "session": "START"}
+{"logTime": "0903/095746", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0903/100210", "session": "END"}
+{"logTime": "0903/100227", "session": "START"}
+{"logTime": "0903/100227", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0903/100228", "session": "END"}
+{"logTime": "0903/100239", "session": "START"}
+{"logTime": "0903/100239", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0903/100239", "session": "END"}
+{"logTime": "0903/100311", "session": "START"}
+{"logTime": "0903/100311", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0903/100317", "session": "END"}
+{"logTime": "0903/100337", "session": "START"}
+{"logTime": "0903/100337", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0903/100338", "session": "END"}
+{"logTime": "0903/100539", "session": "START"}
+{"logTime": "0903/100539", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "0903/102007", "session": "END"}
