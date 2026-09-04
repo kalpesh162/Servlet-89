@@ -14,6 +14,14 @@ import com.model.Student;
 
 public class StudentAddServlet extends HttpServlet {
 
+	private StudentDao dao;  // instance Field
+
+	// one time intialization
+	@Override
+	public void init() throws ServletException {
+		dao = new StudentDaoImpl();
+
+	}
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -26,7 +34,7 @@ public class StudentAddServlet extends HttpServlet {
 
 		Student student = new Student(id, name, marks);
 
-		StudentDao dao = new StudentDaoImpl();
+		// StudentDao dao = new StudentDaoImpl();
 
 		int res = dao.addStudent(student);
 

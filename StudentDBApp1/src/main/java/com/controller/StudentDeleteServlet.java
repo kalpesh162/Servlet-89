@@ -14,6 +14,16 @@ import com.dao.StudentDaoImpl;
 
 @WebServlet("/delete")
 public class StudentDeleteServlet extends HttpServlet {
+	
+	private StudentDao dao;  // instance Field
+
+	// one time intialization
+	@Override
+	public void init() throws ServletException {
+		dao = new StudentDaoImpl();
+
+	}
+
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

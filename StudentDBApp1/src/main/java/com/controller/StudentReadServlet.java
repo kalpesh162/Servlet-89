@@ -18,6 +18,16 @@ import com.model.Student;
 @WebServlet("/show")
 public class StudentReadServlet extends HttpServlet {
 
+	private StudentDao dao;  // instance Field
+
+	// one time intialization
+	@Override
+	public void init() throws ServletException {
+		dao = new StudentDaoImpl();
+
+	}
+
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
