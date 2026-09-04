@@ -52,4 +52,36 @@ public class StudentDaoImpl implements StudentDao {
 
 		return stList;
 	}
+
+	@Override
+	public int updateStudent(Student upstudent) {
+		String sql = "UPDATE  STUDENT SET name=? , marks=?  WHERE id=?";
+
+		try (Connection con = DBUtility.getInstace().getDBConnection();
+				PreparedStatement ps = con.prepareStatement(sql);) {
+			ps.setString(1, upstudent.getName());
+			ps.setDouble(2, upstudent.getMarks());
+			ps.setInt(3, upstudent.getId());
+			return ps.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
+
+	@Override
+	public int deleteStudent(int id) {
+		String sql = "DELETE FROM STUDENT WHERE id=?";
+		try (Connection con = DBUtility.getInstace().getDBConnection();
+				PreparedStatement ps = con.prepareStatement(sql);) {
+
+			ps.setInt(1, id);
+			return ps.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
 }

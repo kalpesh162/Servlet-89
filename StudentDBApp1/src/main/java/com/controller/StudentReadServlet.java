@@ -27,12 +27,9 @@ public class StudentReadServlet extends HttpServlet {
 		StudentDao dao = new StudentDaoImpl();
 
 		List<Student> list = dao.getAllStudents();
-		out.print("<body>");
-		
-		
-		
-		System.out.println(list);
-		out.print("<table style='width:100%'> ");
+		out.print("<body>");	
+		//System.out.println(list);
+		out.print("<table style='width:80% border:2px solid black'>");
 		out.print("<tr>");
 		out.print("<th>"+"Id"+"</th>");
 		out.print("<th>"+"Name"+"</th>");
