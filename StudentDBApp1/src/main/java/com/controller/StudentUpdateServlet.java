@@ -38,8 +38,10 @@ public class StudentUpdateServlet extends HttpServlet {
 
 		int res = dao.updateStudent(student);
 
-		if (res > 0)
+		if (res > 0) {
 			out.print("<h1> SUCCESS  UPDATE !!! </h1>");
+			req.getRequestDispatcher("/show").forward(req, resp);
+		}
 		else
 			out.print("<h1> Failed To Add  !!! </h1>");
 

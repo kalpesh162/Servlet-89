@@ -38,8 +38,10 @@ public class StudentAddServlet extends HttpServlet {
 
 		int res = dao.addStudent(student);
 
-		if (res > 0)
+		if (res > 0) {
 			out.print("<h1> SUCCESS !!! </h1>");
+			req.getRequestDispatcher("/show").forward(req, resp);
+		}		
 		else
 			out.print("<h1> Failed To Add  !!! </h1>");
 

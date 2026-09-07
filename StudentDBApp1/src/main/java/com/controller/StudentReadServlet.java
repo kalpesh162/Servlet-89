@@ -44,6 +44,8 @@ public class StudentReadServlet extends HttpServlet {
 		out.print("<th>"+"Id"+"</th>");
 		out.print("<th>"+"Name"+"</th>");
 		out.print("<th>"+"Marks"+"</th>");
+		out.print("<th>"+"UPDATE"+"</th>");
+		out.print("<th>"+"DELETE"+"</th>");
 		out.print("</tr>");
 		
 		for(Student student:list) {
@@ -51,6 +53,10 @@ public class StudentReadServlet extends HttpServlet {
 			out.print("<td>"+student.getId()+"</td>");
 			out.print("<td>"+student.getName()+"</td>");
 			out.print("<td>"+student.getMarks()+"</td>");
+			String updateTab="<a href='updateForm?id="+student.getId()+"'>"+"UPDATE"+"</a>";
+			out.print("<td>"+updateTab+"</td>");
+			String deleteTab="<a href='delete?id="+student.getId()+"'>"+"DELETE"+"</a>";
+			out.print("<td>"+deleteTab+"</td>");
 			out.print("</tr>");
 		}
 		out.print("</table>");

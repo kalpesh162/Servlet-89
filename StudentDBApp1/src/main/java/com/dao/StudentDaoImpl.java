@@ -84,4 +84,27 @@ public class StudentDaoImpl implements StudentDao {
 		}
 		return 0;
 	}
+
+	@Override
+	public Student findStudentById(int id) {
+		String sql = "SELECT *  FROM STUDENT WHERE id=?";
+		Student student = null;
+		try (Connection con = DBUtility.getInstace().getDBConnection();
+				PreparedStatement ps = con.prepareStatement(sql);) {
+			ps.setInt(1, id);
+			ResultSet rs = ps.executeQuery();
+
+			if (rs.next()) {
+				student = new Student();
+				student.setId(rs.getInt(1));
+				student.setName(rs.getString(2));
+				student.setMarks(rs.getDouble(3));
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return student;
+
+	}
 }
