@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="CookieLoginLogOut" path="/CookieLoginLogOut" reloadable="true" source="org.eclipse.jst.jee.server:CookieLoginLogOut"/></Host>
+      <Context docBase="HiddenFormURL" path="/HiddenFormURL" reloadable="true" source="org.eclipse.jst.jee.server:HiddenFormURL"/></Host>
     </Engine>
   </Service>
 </Server>

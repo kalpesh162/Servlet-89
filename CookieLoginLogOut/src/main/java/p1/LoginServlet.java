@@ -33,7 +33,8 @@ public class LoginServlet extends HttpServlet {
 		
 		if(name.equals("Kareena") && password.equals("123")) {
 			
-			out.print("<h1>" + "WECOME  🙏    "+name.toUpperCase() +"   🌹🌹🌹");
+			out.print("<p style='font-size:50px'>&#128591;</p>");
+			out.print("<h1 style='font-size:50px'>" + "WECOME  🙏    "+name.toUpperCase() +" &#128112  </h1>");
 			Cookie ck=new Cookie("ckid", name);
 			response.addCookie(ck);
 			
