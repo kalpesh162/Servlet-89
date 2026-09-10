@@ -22,8 +22,10 @@
     <fullyQualifiedTypeName name="com.dao.StudentDao"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.text.CollationKey"/>
+    <fullyQualifiedTypeName name="java.net.CookieHandler"/>
     <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.time.temporal.ValueRange"/>
 </qualifiedTypeNameHistroy>
