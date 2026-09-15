@@ -12,6 +12,7 @@
 	  
 	  <%= exception %>
 	 
+
 	</h1>
 
 </body>
