@@ -1,7 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,13 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dao.StudentDAO;
-import com.dao.StudentDAOImpl;
 import com.dao.StudentFactory;
 import com.model.Student;
 
-@WebServlet("/add")
-public class StudentAddServlet extends HttpServlet {
-
+@WebServlet("/read")
+public class StudentReadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	private StudentDAO studentDAO;
@@ -30,24 +28,16 @@ public class StudentAddServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		response.setContentType("text/html");
-		PrintWriter out=response.getWriter();
+		// read All data
+		// display All data Here 
 		
-		String name=request.getParameter("fname");
-		double marks =Double.parseDouble(request.getParameter("marks"));
+		List<Student> list=studentDAO.getAllStudents();  
 		
-		Student student=new Student(name, marks);
+		request.setAttribute("data", list);
+		
+		request.getRequestDispatcher("/display.jsp").forward(request, response);
 		
 		
-		int noOfRows=studentDAO.addStudent(student);
-		
-		if(noOfRows>0) {
-			  request.getRequestDispatcher("/read").forward(request, response);
-		}
-		else {
-	       // error.jsp		
-		}
-	
 	}
 
 }
