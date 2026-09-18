@@ -32,8 +32,19 @@
 	     <td><%= student.getId() %></td>
 	     <td><%= student.getName() %></td>
 	     <td><%= student.getMarks() %></td>
-	  	 <td><%= "UPDATE" %></td>
-	  	 <td><%= "DELETE" %></td>
+	  	 
+	  	 
+	  	  <td>
+	  	 <b>
+	  	 <%= "<a style='color:green ; text-decoration:none '   href='updateform?id="+student.getId()+"'>"+"UPDATE"+ "</a>" %>
+	  	 </b>
+	  	 </td>
+	   
+	  	 <td>
+	  	 </b>
+	  	 <%= "<a style='color:red ; text-decoration:none '   href='delete?id="+student.getId()+"'>"+"DELETE"+ "</a>" %>
+	  	 </b>
+	  	 </td>
 	   
 	   </tr>
 <% }  %>

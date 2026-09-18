@@ -12,3 +12,10 @@ th, td {
 }
 
 tr:hover {background-color: #D6EEEE;}
+
+#a1 {
+  color: hotpink;
+  background-color: yellow;
+  font-weight: bold;
+  text-decoration: none;
+}

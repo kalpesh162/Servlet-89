@@ -15,7 +15,6 @@
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="com.dao.StudentDaoImpl"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-    <fullyQualifiedTypeName name="com.model.Student"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.dao.StudentDao"/>
@@ -27,8 +26,11 @@
     <fullyQualifiedTypeName name="java.time.temporal.ValueRange"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.dao.StudentFactory"/>
+    <fullyQualifiedTypeName name="com.model.Student"/>
+    <fullyQualifiedTypeName name="com.dao.StudentDAO"/>
 </qualifiedTypeNameHistroy>
